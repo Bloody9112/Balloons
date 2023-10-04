@@ -1,0 +1,96 @@
+/* Background Images Right */
+
+.images_right {
+	display: flex;
+	justify-content: flex-end;
+}
+
+/* Clouds */
+
+#cloud_2 {
+	position: absolute;
+	width: 215px;
+	height: 134px;
+	margin-top: 129px;
+	margin-right: 86px;
+	z-index: -1;
+}
+
+#cloud_3 {
+	position: absolute;
+	width: 279px;
+	height: 174px;
+	margin: 756px 29px 0 0;
+    z-index: -2;
+}
+
+#cloud_4 {
+	position: absolute;
+	width: 136px;
+	height: 84px;
+	margin: 1119px 38px 0 0;
+    z-index: -1;
+}
+
+/* Balloon */
+
+#balloon_big {
+	position: absolute;
+	width: 320px;
+	height: 456px;
+	margin: 441px 25px 0 0;
+	z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+/* Background Images Left */
+
+.images_left {
+	display: flex;
+	justify-content: flex-start;
+}
+
+/* Clouds */
+
+#cloud_1 {
+	position: absolute;
+	width: 279px;
+	height: 174px;
+	margin: 109px 0 0 47px;
+	z-index: -1;
+}
+
+#cloud_5 {
+	position: absolute;
+	width: 279px;
+	height: 174px;
+	margin: 2346px 0 0 0;
+
+}
+
+/* Bird */
+
+#bird {
+	position: absolute;
+	width: 85px;
+	height: 62px;
+	margin: 359px 0 0 78px;
+	z-index: -1;
+}
+
+/* Balloon */
+
+#balloon_small {
+	position: absolute;
+	width: 200px;
+	height: 285px;
+	margin: 902px 0 0 40px;
+	z-index: -1;
+}
