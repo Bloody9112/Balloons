@@ -39,7 +39,7 @@
 				<a href="./index.html"><img src="./img/nav/logo.svg" alt=""></a>
 
 				<ul class="nav-menu">
-					<li><a href="#!" class="nav-link">Про нас</a></li>
+					<li><a href="#about_us" class="nav-link">Про нас</a></li>
 					<li><a href="#!" class="nav-link">Ціни</a></li>
 					<li><a href="#!" class="nav-link">Подарунковий сертифікат</a></li>
 					<li><a href="#!" class="nav-link">Галерея</a></li>
@@ -74,13 +74,13 @@
 				</div>
 
 				<div class="header_contacts">
-					<div class="header_numbers">+380 (63) 777 66 66</div>
-					<div class="header_numbers">+380 (63) 777 66 66</div>
-					<div class="header_numbers">+380 (63) 777 66 66</div>
-				</div>
+					<a class="header_numbers" href="tel:+380637776666">+380 (63) 777 66 66</a>
+					<a class="header_numbers" href="tel:+380637776666">+380 (63) 777 66 66</a>
+					<a class="header_numbers" href="tel:+380637776666">+380 (63) 777 66 66</a>
+			</div>
 
 				<div class="header_about">
-					<div class="about_main">Про нас</div>
+					<div class="about_main" id="about_us">Про нас</div>
 					<div class="about_text">Balloon Flights – команда пілотів з багаторічним досвідом польотів в
 						Україні та багатьох державах світу, готові втілити Вашу мрію в реальність та надати можливість
 						побачити цей світ з висоти пташиного польоту.</div>
@@ -149,7 +149,7 @@
 						</div>
 					</div>
 
-					<div class="total_price">
+					<div class="total_price" >
 						<div class="total_price_title">Вартість польоту для компанії з двох чоловік</div>
 						<div class="total_price_text">7500 гривень</div>
 					</div>
@@ -175,9 +175,9 @@
 							від 200 до 500 метрів. За таких умов можна максимально насолодитися краєвидами.
 						</div>
 						<div class="terms_columns">
-							<a href="#!" class="term_buttons">+380 (66) 172 02 17</a>
-							<a href="#!" class="term_buttons">+380 (96) 276 72 40</a>
-						</div>
+							<a href="tel:+380661720217" class="term_buttons">+380 (66) 172 02 17</a>
+							<a href="tel:+380962767240" class="term_buttons">+380 (96) 276 72 40</a>
+					</div>
 					</div>
 				</div>
 			</div>
@@ -187,25 +187,25 @@
 				<div class="certificate_title">
 					<div class="certificate_title_text">Замовити сертифікат</div>
 				</div>
-				
+
 				<div class="certificate_bg_area">
 					<div class="who_buying_title">1. Хто купує</div>
 					<div class="fields">
-						<div class="name">
-							<div class="name_text">Ім'я</div>
-							<input type="text" class="input" placeholder="Вадим">
+						<div class="field_box">
+							<label for="name" class="name_text">Ім'я</label>
+							<input type="text" id="name" class="input" placeholder="Вадим">
 						</div>
-						<div class="name">
-							<div class="name_text">Прізвище</div>
-							<input type="text" class="input" placeholder="Маздан">
+						<div class="field_box">
+							<label for="surname" class="name_text">Прізвище</label>
+							<input type="text" id="surname" class="input" placeholder="Маздан">
 						</div>
-						<div class="name">
-							<div class="name_text">Номер телефону</div>
-							<input type="number" class="input" placeholder="+380 (96) 777 77 77">
+						<div class="field_box">
+							<label for="phone" class="name_text">Номер телефону</label>
+							<input type="number" id="phone" class="input" placeholder="+380 (96) 777 77 77">
 						</div>
-						<div class="name">
-							<div class="name_text">Email адреса</div>
-							<input type="email" class="input" placeholder="vadim@mazdan.ua">
+						<div class="field_box">
+							<label for="email" class="name_text">Email адреса</label>
+							<input type="email" id="email" class="input" placeholder="vadim@mazdan.ua">
 						</div>
 					</div>
 				</div>
@@ -213,25 +213,48 @@
 				<div class="certificate_bg_area">
 					<div class="who_buying_title">2. Хто літає</div>
 					<div class="fields">
-						<div class="name">
-							<div class="name_text">Ім'я</div>
-							<input type="text" class="input" placeholder="Вадим">
+						<div class="field_box">
+							<label for="name_2" class="name_text">Ім'я</label>
+							<input type="text" id="name_2" class="input" placeholder="Вадим">
 						</div>
-						<div class="name">
-							<div class="name_text">Прізвище</div>
-							<input type="text" class="input" placeholder="Маздан">
+						<div class="field_box">
+							<label for="surname_2" class="name_text">Прізвище</label>
+							<input type="text" id="surname_2" class="input" placeholder="Маздан">
 						</div>
-						<div class="name">
-							<div class="name_text">Номер телефону</div>
-							<input type="number" class="input" placeholder="+380 (96) 777 77 77">
+						<div class="field_box">
+							<label for="phone_2" class="name_text">Номер телефону</label>
+							<input type="number" id="phone_2" class="input" placeholder="+380 (96) 777 77 77">
 						</div>
-						<div class="name">
-							<div class="name_text">Email адреса</div>
-							<input type="email" class="input" placeholder="vadim@mazdan.ua">
+						<div class="field_box">
+							<label for="email_2" class="name_text">Email адреса</label>
+							<input type="email" id="email_2" class="input" placeholder="vadim@mazdan.ua">
 						</div>
 					</div>
 				</div>
+
+				<div class="certificate_bg_area" style="max-width: 600px;">
+					<div class="who_buying_title">3. Тип сертифіката</div>
+					<div class="image-options">
+						<div class="image-option">
+							<img src="./img/main/certificate/email.svg" alt="Варіант 1">
+							<p class="image-text">Електронний</p>
+						</div>
+						<div class="image-option">
+							<img src="./img/main/certificate/print.svg" alt="Варіант 2">
+							<p class="image-text">Надрукований</p>
+						</div>
+					</div>
+					<div class="line"></div>
+					<p class="agree-text">
+						Я згоден з <span> умовами сертифіката</span>
+					</p>
+					<button class="order-button">Замовити</button>
+				</div>
+				
+
 			
+
+				
 
 			</div>
 		</div>

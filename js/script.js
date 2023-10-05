@@ -28,3 +28,23 @@ function activateButton(button) {
   // Додати активний клас до натиснутої кнопки
   button.classList.add('active');
 }
+
+///* Плавний скролл *///
+
+
+    // Додаємо обробник події для всіх посилань з класом "nav-link"
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault(); // Забороняємо стандартну дію посилань
+            
+            const targetId = this.getAttribute('href').substring(1); // Отримуємо ідентифікатор якоря
+            const targetElement = document.getElementById(targetId); // Знаходимо елемент за ідентифікатором
+            
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop, // Позиція верхнього краю цільового елемента
+                    behavior: 'smooth' // Плавна прокрутка
+                });
+            }
+        });
+    });
