@@ -21,7 +21,7 @@
 	width: 279px;
 	height: 174px;
 	margin: 756px 29px 0 0;
-    z-index: -2;
+	z-index: -2;
 }
 
 #cloud_4 {
@@ -29,7 +29,24 @@
 	width: 136px;
 	height: 84px;
 	margin: 1119px 38px 0 0;
-    z-index: -1;
+	z-index: -1;
+}
+
+#cloud_7 {
+	position: absolute;
+	width: 179px;
+	height: 112px;
+	margin: 5119px 122px 0 0;
+	z-index: 1;
+}
+
+#cloud_9 {
+	position: absolute;
+	width: 179px;
+	height: 112px;
+	margin: 6335px 122px 0 0;
+	z-index: 1;
+	transform: scale(-1, 1)
 }
 
 /* Balloon */
@@ -72,7 +89,30 @@
 	width: 279px;
 	height: 174px;
 	margin: 2346px 0 0 0;
+}
 
+#cloud_5 {
+	position: absolute;
+	width: 279px;
+	height: 174px;
+	margin: 2346px 0 0 0;
+	z-index: 1;
+}
+
+#cloud_6 {
+	position: absolute;
+	width: 279px;
+	height: 174px;
+	margin: 4780px 0 0 0;
+	z-index: 1;
+}
+
+#cloud_8 {
+	position: absolute;
+	width: 179px;
+	height: 112px;
+	margin: 5580px 0 0 290px;
+	z-index: 1;
 }
 
 /* Bird */
@@ -93,4 +133,83 @@
 	height: 285px;
 	margin: 902px 0 0 40px;
 	z-index: -1;
+}
+
+
+@media (max-width: 1200px) {
+
+	#cloud_5 {
+		display: none;
+	}
+
+	#cloud_6 {
+		display: none;
+	}
+
+	#cloud_7 {
+		display: none;
+	}
+
+	#cloud_8 {
+		display: none;
+	}
+
+	#cloud_9 {
+		display: none;
+	}
+}
+
+@media (max-width: 915px) {
+	#cloud_4 {
+		margin: 1200px 29px 0 0;
+	}
+
+	#balloon_small {
+		margin: 1075px 0 0 40px;
+	}
+}
+
+@media (max-width: 690px) {
+	#cloud_1 {
+		display: none;
+	}
+	
+	#cloud_4 {
+		margin: 1820px 29px 0 0;
+	}
+
+	#balloon_small {
+		margin: 1200px 0 0 40px;
+	}
+}
+
+@media (max-width: 640px) {
+	#cloud_2 {
+		margin-top: 155px;
+		margin-right: 86px;
+	}
+}
+
+
+@media (max-width: 570px) {
+	#balloon_small {
+		margin: 1225px 0 0 40px;
+	}
+}
+
+@media (max-width: 515px) {
+	#cloud_2 {
+		margin-top: 185px;
+		margin-right: 25px;
+	}
+}
+
+@media (max-width: 485px) {
+	#cloud_4 {
+		margin: 2000px 25px 0 0;
+	}
+
+	#balloon_small {
+		margin: 1400px 0 0 20px;
+	}
 }
