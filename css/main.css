@@ -1,5 +1,6 @@
 @import "./reset.css";
 @import "./bg_images.css";
+@import "./media.css";
 @import url('https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css');
 
 /* 
@@ -112,7 +113,7 @@ body {
 
 .header_buttons {
 	display: grid;
-	justify-content: center;
+	justify-items: center;
 	row-gap: 20px;
 	width: 100%;
 	margin: 0 auto;
@@ -191,9 +192,8 @@ body {
 .header_numbers {
 	color: #248DFF;
 	font-size: 18px;
-	font-style: normal;
 	font-weight: 500;
-	line-height: normal;
+	text-decoration: underline;
 }
 
 .header_about {
@@ -324,7 +324,6 @@ body {
 
 .order_title {
 	display: grid;
-	justify-content: center;
 	justify-items: center;
 	text-align: center;
 	width: 100%;
@@ -691,8 +690,10 @@ body {
 }
 
 .image-option-button_1.active {
-	background: #248DFF; /* Колір для активної кнопки */
-	transform: scale(1.05); /* Збільшуємо кнопку при активації */
+	background: #248DFF;
+	/* Колір для активної кнопки */
+	transform: scale(1.05);
+	/* Збільшуємо кнопку при активації */
 }
 
 .image-option-button_2 {
@@ -708,8 +709,10 @@ body {
 }
 
 .image-option-button_2.active {
-	background: #248DFF; /* Колір для активної кнопки */
-	transform: scale(1.05); /* Збільшуємо кнопку при активації */
+	background: #248DFF;
+	/* Колір для активної кнопки */
+	transform: scale(1.05);
+	/* Збільшуємо кнопку при активації */
 }
 
 .image-text {
@@ -733,7 +736,7 @@ body {
 	font-weight: 500;
 }
 
-.agree-text span {
+.agree-text a {
 	color: #248DFF;
 	font-size: 20px;
 	font-weight: 500;
@@ -758,7 +761,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	border-bottom: 1px solid #E8E8E8;
 	margin-top: 199px;
 	margin-bottom: 140px;
 }
@@ -811,14 +813,14 @@ body {
 }
 
 
-/* Modal ordering */ 
+/* Modal ordering */
 
 .header_order {
 	display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	width: 100%;
 	max-width: 550px;
 	margin: 0 auto;
@@ -942,8 +944,6 @@ body {
 
 
 
-
-
 @media (max-width: 888px) {
 	.nav-language {
 		margin-left: 5px;
@@ -953,11 +953,19 @@ body {
 	}
 }
 
+
+
 @media (max-width: 700px) {
+
+	.nav {
+		font-size: 14.5px;
+	}
+
 	.nav-row {
 		justify-content: space-around;
 		align-items: center;
 		row-gap: 15px;
+		column-gap: 100%;
 		flex-wrap: wrap;
 	}
 
@@ -967,19 +975,383 @@ body {
 		align-items: center;
 		justify-content: center;
 		margin-left: 5px;
-		column-gap: 25px;
+		column-gap: 15px;
 		row-gap: 10px;
 		border-bottom: 1px solid gray;
 		border-top: 1px solid gray;
 		padding: 5px 0;
 	}
+
+	/* Header */
+
+	.header_page {
+		margin: 20px 0 0 0;
+		row-gap: 50px;
+		column-gap: 15px;
+		margin-bottom: 100px;
+	}
+
+	.header_text {
+		font-size: 60px;
+		line-height: 75px;
+	}
+
+	.blue_button {
+		height: 60px;
+		width: 275px;
+		font-size: 22px;
+	}
+
+	.white_button {
+		height: 60px;
+		width: 275px;
+		font-size: 22px;
+		background: #fff;
+	}
+
+
+	.header_contacts {
+		gap: 20px;
+		padding-top: 35px;
+	}
+
+	.header_numbers {
+		font-size: 16.5px;
+		width: 100%;
+	}
+
+	.header_about {
+		gap: 35px;
+		margin-top: 50px;
+	}
+
+	.about_main {
+		font-size: 60px;
+		line-height: 75px;
+	}
+
+	.about_text {
+		font-size: 22px;
+		padding: 0 25px;
+		font-weight: 300;
+	}
+
+	/* Location */
+
+	.location {
+		row-gap: 20px;
+		margin-top: 150px;
+		padding: 0 25px;
+	}
+
+	.location_title_text {
+		font-size: 60px;
+		line-height: 75px;
+	}
+
+	.location_columns {
+		margin-bottom: 50px;
+	}
+
+	.location_columns_title {
+		font-size: 30px;
+		line-height: 20px;
+		margin-bottom: 25px;
+	}
+
+	.location_columns_text {
+		font-size: 16px;
+		line-height: 25px;
+		padding: 0 20px;
+	}
+
+	.location_columns_text_left {
+		font-size: 16px;
+		line-height: 25px;
+		padding: 0 20px;
+	}
+
+	/* Order */
+
+	.order_title {
+		margin-top: 50px;
+		margin-bottom: 45px;
+	}
+
+	.order_title_text {
+		font-size: 60px;
+		line-height: 75px;
+	}
+
+	/* Flight Type */
+
+	.flight_type {
+		row-gap: 45px;
+
+	}
+
+	.flight_type_title {
+		font-size: 25px;
+		margin-top: 50px;
+		margin-bottom: 40px;
+	}
+
+	.flight_columns_text {
+		font-size: 18px;
+		margin-top: 25px;
+	}
+
+	/* Count */
+
+	.count_title {
+		font-size: 25px;
+		margin-top: 63px;
+	}
+
+	.count_columns {
+		margin-top: 35px;
+	}
+
+	.count_columns_box {
+		width: 95px;
+		height: 99px;
+		font-size: 25px;
+	}
+
+	.count_columns_box.active {
+		font-size: 25px;
+	}
+
+	/* Prices */
+
+	.total_price {
+		gap: 25px;
+		padding-top: 80px;
+		padding-bottom: 78px;
+	}
+
+	.total_price_title {
+		font-size: 25px;
+	}
+
+	.total_price_text {
+		font-size: 30px;
+	}
+
+	/* Terms */
+
+	.terms {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+
+	.terms_title {
+		font-size: 25px;
+	}
+
+	.terms_text {
+		font-size: 15px;
+		margin-top: 45px;
+		margin-bottom: 50px;
+		padding: 0 20px;
+	}
+
+	.terms_columns {
+		gap: 25px;
+	}
+
+	.term_buttons {
+		height: 60px;
+		width: 275px;
+		font-size: 22px;
+	}
+
+	/* Certificate */
+
+	.certificate_title {
+		margin-top: 75px;
+	}
+
+	.certificate_title_text {
+		font-size: 50px;
+		line-height: 75px;
+		padding: 0 25px;
+	}
+
+	.certificate_bg_area {
+		padding: 0 25px;
+		margin: 0 25px;
+		margin-top: 50px;
+	}
+
+
+	.who_buying_title {
+		font-size: 25px;
+		padding-top: 40px;
+		padding-bottom: 29px;
+	}
+
+	.fields {
+		gap: 25px;
+		margin-top: 40px;
+		margin-bottom: 50px;
+	}
+
+	.field_box {
+		gap: 15px;
+		padding: 0 15px;
+	}
+
+	.name_text {
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+	.input {
+		padding: 17px 0 19px 15px;
+		font-size: 20px;
+		line-height: 20px;
+	}
+
+	/* 3 форма */
+
+	.image-options {
+		margin-top: 50px;
+		margin-bottom: 45px;
+		column-gap: 75px;
+	}
+
+	.image-option-button_1 {
+		width: 167px;
+		height: 174px;
+
+	}
+
+	.image-option-button_2 {
+		width: 167px;
+		height: 174px;
+	}
+
+	.image-text {
+		margin-top: 25px;
+		font-size: 18px;
+	}
+
+	.line {
+		margin-top: 50px;
+	}
+
+	.agree-text {
+		margin: 40px 0;
+		font-size: 17px;
+	}
+
+	.agree-text span {
+		font-size: 17px;
+	}
+
+	.order-button {
+
+		height: 60px;
+		width: 275px;
+		font-size: 22px;
+		margin-bottom: 40px;
+	}
+
+	/* Gallery */
+
+	.gallery {
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+
+	.gallery_title {
+		font-size: 60px;
+		line-height: 75px;
+	}
+
+	.gallery_columns {
+		gap: 35px;
+		margin-top: 65px;
+	}
+
+	.gallery_columns_box {
+		row-gap: 35px;
+		width: 230px;
+		height: 230px;
+	}
+
+	/* Modal ordering */
+
+	.header_order {
+		max-width: auto;
+	}
+
+	.header_order_title {
+		font-size: 25px;
+		padding-top: 45px;
+		padding-bottom: 30px;
+	}
+
+	.order_form {
+		gap: 25px;
+		margin-top: 45px;
+		margin-bottom: 60px;
+	}
+
+	.field_box {
+		gap: 15px;
+		padding: 0 25px;
+	}
+
+	.input {
+		padding: 17px 0 19px 15px;
+		font-size: 20px;
+		line-height: 20px;
+	}
+
+	.name_text {
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+	.blue_order_button {
+		height: 60px;
+		width: 275px;
+		font-size: 22px;
+		margin: 0 75px;
+		margin-bottom: -10px;
+	}
+
+
+	.white_order_button {
+		height: 60px;
+		width: 275px;
+		font-size: 22px;
+		margin: 0 75px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
-
-@media (max-width: 640px) {
-	
-
-
-
-
+@media (max-width: 500px) {
+	.header_text {
+		font-size: 40px;
+		line-height: 55px;
+	}
 }

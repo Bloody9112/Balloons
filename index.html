@@ -96,11 +96,11 @@
 					<div class="order_form">
 						<div class="field_box">
 							<label for="name_3" class="name_text">Ім'я</label>
-							<input type="text" id="name_3" class="input" placeholder="Вадим">
+							<input type="text" id="name_3" class="input">
 						</div>
 						<div class="field_box">
 							<label for="phone_3" class="name_text">Номер телефону</label>
-							<input type="number" id="phone_3" class="input" placeholder="+380 (96) 777 77 77">
+							<input type="number" id="phone_3" class="input">
 						</div>
 						<button class="blue_order_button" id="order_accept">Замовити</button>
 						<button class="white_order_button" id="order_cancel">Скасувати</button>
@@ -179,7 +179,7 @@
 					</div>
 
 					<div class="terms">
-						<div class="terms_title">Умови польоту:</div>
+						<div class="terms_title" id="terms">Умови польоту:</div>
 						<div class="terms_text">За вказану суму Ви оплачуєте за: безпосередній політ на повітряній кулі, трансфер до
 							місця початку польоту і зворотній трансфер з місця приземлення кулі,  проведення церемонії посвяти у
 							повітроплавці, частування шампанським.
@@ -216,19 +216,19 @@
 					<div class="fields">
 						<div class="field_box">
 							<label for="name" class="name_text">Ім'я</label>
-							<input type="text" id="name" class="input" placeholder="Вадим">
+							<input type="text" id="name" class="input">
 						</div>
 						<div class="field_box">
 							<label for="surname" class="name_text">Прізвище</label>
-							<input type="text" id="surname" class="input" placeholder="Маздан">
+							<input type="text" id="surname" class="input">
 						</div>
 						<div class="field_box">
 							<label for="phone" class="name_text">Номер телефону</label>
-							<input type="number" id="phone" class="input" placeholder="+380 (96) 777 77 77">
+							<input type="number" id="phone" class="input">
 						</div>
 						<div class="field_box">
 							<label for="email" class="name_text">Email адреса</label>
-							<input type="email" id="email" class="input" placeholder="vadim@mazdan.ua">
+							<input type="email" id="email" class="input">
 						</div>
 					</div>
 				</div>
@@ -238,19 +238,19 @@
 					<div class="fields">
 						<div class="field_box">
 							<label for="name_2" class="name_text">Ім'я</label>
-							<input type="text" id="name_2" class="input" placeholder="Вадим">
+							<input type="text" id="name_2" class="input">
 						</div>
 						<div class="field_box">
 							<label for="surname_2" class="name_text">Прізвище</label>
-							<input type="text" id="surname_2" class="input" placeholder="Маздан">
+							<input type="text" id="surname_2" class="input">
 						</div>
 						<div class="field_box">
 							<label for="phone_2" class="name_text">Номер телефону</label>
-							<input type="number" id="phone_2" class="input" placeholder="+380 (96) 777 77 77">
+							<input type="number" id="phone_2" class="input">
 						</div>
 						<div class="field_box">
 							<label for="email_2" class="name_text">Email адреса</label>
-							<input type="email" id="email_2" class="input" placeholder="vadim@mazdan.ua">
+							<input type="email" id="email_2" class="input">
 						</div>
 					</div>
 				</div>
@@ -273,27 +273,30 @@
 					</div>
 					<div class="line"></div>
 					<p class="agree-text">
-						Я згоден з <span> умовами сертифіката</span>
+						Я згоден з <a href="#terms"> умовами сертифіката</a>
 					</p>
 					<button class="order-button">Замовити</button>
 				</div>
 
 
 
-				<div class="gallery">
-					<div class="gallery_title">Галерея</div>
-					<div class="gallery_columns">
-						<div class="gallery_columns_box"><img src="./img/main/gallery/img_1.svg" alt="Gallery Image"></div>
-						<div class="gallery_columns_box"><img src="./img/main/gallery/img_2.svg" alt="Gallery Image"></div>
-						<div class="gallery_columns_box"><img src="./img/main/gallery/img_3.svg" alt="Gallery Image"></div>
-						<div class="gallery_columns_box"><img src="./img/main/gallery/img_4.svg" alt="Gallery Image"></div>
-					</div>
-				</div>
-			</div>
+				
 	</main>
 
 	<footer class="footer">
-		<img src="./../img/footer/bg.jpg" alt="">
+		<div class="container">
+			<div class="gallery">
+				<div class="gallery_title">Галерея</div>
+				<div class="gallery_columns">
+					<div class="gallery_columns_box"><img src="./img/main/gallery/img_1.svg" alt="Gallery Image"></div>
+					<div class="gallery_columns_box"><img src="./img/main/gallery/img_2.svg" alt="Gallery Image"></div>
+					<div class="gallery_columns_box"><img src="./img/main/gallery/img_3.svg" alt="Gallery Image"></div>
+					<div class="gallery_columns_box"><img src="./img/main/gallery/img_4.svg" alt="Gallery Image"></div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<img src="./../img/footer/bg.jpg" alt="footer img">
 	</footer>
 
 	<script src="./js/script.js"></script>
