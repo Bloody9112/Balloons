@@ -173,6 +173,10 @@
 	#cloud_1 {
 		display: none;
 	}
+
+	#cloud_2 {
+		margin-right: 25px;
+	}
 	
 	#cloud_4 {
 		margin: 1275px 29px 0 0;
@@ -181,18 +185,58 @@
 	#balloon_small {
 		margin: 900px 0 0 40px;
 	}
+
+	#bird {
+		margin: 350px 0 0 25px;
+	}
 }
 
 
 
-@media (max-width: 570px) {
-
-	#cloud_3 {
-		display: none;
-	}
+@media (max-width: 559px) {
 
 	#cloud_4 {
-		margin: 1325px 29px 0 0;
+		margin: 1400px 29px 0 0;
+	}
+
+	#balloon_small {
+		margin: 950px 0 0 25px;
+	}
+	
+}
+
+@media (max-width: 500px) {
+
+	#cloud_4 {
+		margin: 1180px 25px 0 0;
+	}
+
+	#balloon_small {
+		margin: 950px 0 0 25px;
+	}
+	
+}
+
+@media (max-width: 430px) {
+
+	#cloud_4 {
+		margin: 1280px 25px 0 0;
+	}
+
+	#balloon_small {
+		margin: 950px 0 0 25px;
+	}
+	
+}
+
+@media (max-width: 403px) {
+
+	#cloud_4 {
+		margin: 1400px 25px 0 0;
+	}
+
+	#balloon_small {
+		margin: 950px 0 0 25px;
 	}
 	
 }
