@@ -993,8 +993,10 @@ body {
 	}
 
 	.header_text {
-		font-size: 60px;
+		font-size: 50px;
 		line-height: 75px;
+		backdrop-filter: blur(10px);
+		border-radius: 50px;
 	}
 
 	.blue_button {
@@ -1014,11 +1016,16 @@ body {
 	.header_contacts {
 		gap: 20px;
 		padding-top: 35px;
+		
 	}
 
 	.header_numbers {
 		font-size: 16.5px;
+		max-width: 190px;
 		width: 100%;
+		margin: 0 100px;
+		backdrop-filter: blur(10px);
+		border-radius: 50px;
 	}
 
 	.header_about {
@@ -1029,12 +1036,17 @@ body {
 	.about_main {
 		font-size: 60px;
 		line-height: 75px;
+		backdrop-filter: blur(10px);
+		border-radius: 25px;
+		padding: 0 10px;
 	}
 
 	.about_text {
 		font-size: 22px;
 		padding: 0 25px;
 		font-weight: 300;
+		backdrop-filter: blur(35px);
+		border-radius: 50px;
 	}
 
 	/* Location */
@@ -1186,7 +1198,6 @@ body {
 		box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.25);
 	}
 
-
 	.who_buying_title {
 		font-size: 25px;
 		padding-top: 40px;
@@ -1325,7 +1336,6 @@ body {
 		margin-bottom: -10px;
 	}
 
-
 	.white_order_button {
 		height: 60px;
 		width: 275px;
@@ -1333,27 +1343,15 @@ body {
 		margin: 0 75px;
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 @media (max-width: 500px) {
 	.header_text {
-		font-size: 40px;
-		line-height: 55px;
+		font-size: 35px;
+		line-height: 50px;
+	}
+
+	.header_numbers {
+		margin: 0 5px;
 	}
 }
