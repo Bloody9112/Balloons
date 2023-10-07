@@ -1046,7 +1046,7 @@ body {
 
 	.about_text {
 		font-size: 22px;
-		padding: 0 25px;
+		padding: 5px 25px;
 		font-weight: 300;
 		-webkit-backdrop-filter: blur(35px);
 		backdrop-filter: blur(35px);
