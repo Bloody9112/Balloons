@@ -995,6 +995,7 @@ body {
 	.header_text {
 		font-size: 50px;
 		line-height: 75px;
+		-webkit-backdrop-filter: blur(10px);
 		backdrop-filter: blur(10px);
 		border-radius: 50px;
 	}
@@ -1024,6 +1025,7 @@ body {
 		max-width: 190px;
 		width: 100%;
 		margin: 0 100px;
+		-webkit-backdrop-filter: blur(10px);
 		backdrop-filter: blur(10px);
 		border-radius: 50px;
 	}
@@ -1036,6 +1038,7 @@ body {
 	.about_main {
 		font-size: 60px;
 		line-height: 75px;
+		-webkit-backdrop-filter: blur(10px);
 		backdrop-filter: blur(10px);
 		border-radius: 25px;
 		padding: 0 10px;
@@ -1045,6 +1048,7 @@ body {
 		font-size: 22px;
 		padding: 0 25px;
 		font-weight: 300;
+		-webkit-backdrop-filter: blur(35px);
 		backdrop-filter: blur(35px);
 		border-radius: 50px;
 	}
