@@ -17,17 +17,43 @@ languageLinks.forEach(link => {
 ///* Count *///
 
 function activateButton(button) {
-	// Знайти всі кнопки
-	var buttons = document.querySelectorAll('.count_columns_box');
+    // Знайти всі кнопки
+    var buttons = document.querySelectorAll('.count_columns_box');
 
-	// Зняти активний клас з усіх кнопок
-	buttons.forEach(function (btn) {
-		btn.classList.remove('active');
-	});
+    // Зняти активний клас з усіх кнопок
+    buttons.forEach(function (btn) {
+        btn.classList.remove('active');
+    });
 
-	// Додати активний клас до натиснутої кнопки
-	button.classList.add('active');
+    // Додати активний клас до натиснутої кнопки
+    button.classList.add('active');
+
+    // Отримати текст кнопки і конвертувати його в число
+    var count = parseInt(button.textContent);
+
+    // Отримати посилання на елементи, які потрібно оновити
+    var titleElement = document.querySelector('.total_price_title');
+    var textElement = document.querySelector('.total_price_text');
+
+    // Встановити текст у відповідні елементи відповідно до кількості людей
+    if (count === 2) {
+        titleElement.textContent = 'Вартість польоту для компанії з двох чоловік';
+        textElement.textContent = '7500 гривень';
+    } else if (count === 3) {
+        titleElement.textContent = 'Вартість польоту для компанії з трьох чоловік';
+        textElement.textContent = '11000 гривень';
+    } else if (count === 4) {
+        titleElement.textContent = 'Вартість польоту для компанії з чотирьох чоловік';
+        textElement.textContent = '14000 гривень';
+    } else if (count === 5) {
+        titleElement.textContent = 'Вартість польоту для компанії з пʼятьох чоловік';
+        textElement.textContent = '17000 гривень';
+    } else if (count === 6) {
+        titleElement.textContent = 'Вартість польоту для компанії з шести чоловік';
+        textElement.textContent = '20000 гривень';
+    }    
 }
+
 
 ///* Плавний скролл *///
 
