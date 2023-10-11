@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Balloon flights</title>
 	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+
 </head>
 
 <body>
@@ -96,13 +99,14 @@
 				<div class="order_form">
 					<div class="field_box">
 						<label for="name_3" class="name_text">Ім'я</label>
-						<input type="text" id="name_3" class="input">
+						<input type="text" id="name_3" class="input" required>
 					</div>
 					<div class="field_box">
 						<label for="phone_3" class="name_text">Номер телефону</label>
-						<input type="number" id="phone_3" class="input">
+						<input type="number" id="phone_3" class="input" required>
 					</div>
-					<button class="blue_order_button" id="order_accept">Замовити</button>
+					<div class="form-error" id="form-error"></div>
+					<button class="blue_order_button" id="order_accept" type="submit">Замовити</button>
 					<button class="white_order_button" id="order_cancel">Скасувати</button>
 				</div>
 			</div>
@@ -216,20 +220,21 @@
 					<div class="fields">
 						<div class="field_box">
 							<label for="name" class="name_text">Ім'я</label>
-							<input type="text" id="name" class="input">
+							<input type="text" id="name" class="input" required>
 						</div>
 						<div class="field_box">
 							<label for="surname" class="name_text">Прізвище</label>
-							<input type="text" id="surname" class="input">
+							<input type="text" id="surname" class="input" required>
 						</div>
 						<div class="field_box">
 							<label for="phone" class="name_text">Номер телефону</label>
-							<input type="number" id="phone" class="input">
+							<input type="number" id="phone" class="input" required>
 						</div>
 						<div class="field_box">
 							<label for="email" class="name_text">Email адреса</label>
-							<input type="email" id="email" class="input">
+							<input type="email" id="email" class="input" required>
 						</div>
+
 					</div>
 				</div>
 
@@ -238,22 +243,25 @@
 					<div class="fields">
 						<div class="field_box">
 							<label for="name_2" class="name_text">Ім'я</label>
-							<input type="text" id="name_2" class="input">
+							<input type="text" id="name_2" class="input" required>
 						</div>
 						<div class="field_box">
 							<label for="surname_2" class="name_text">Прізвище</label>
-							<input type="text" id="surname_2" class="input">
+							<input type="text" id="surname_2" class="input" required>
 						</div>
 						<div class="field_box">
 							<label for="phone_2" class="name_text">Номер телефону</label>
-							<input type="number" id="phone_2" class="input">
+							<input type="number" id="phone_2" class="input" required>
 						</div>
 						<div class="field_box">
 							<label for="email_2" class="name_text">Email адреса</label>
-							<input type="email" id="email_2" class="input">
+							<input type="email" id="email_2" class="input" required>
 						</div>
 					</div>
 				</div>
+
+
+
 
 				<div class="certificate_bg_area" style="max-width: 600px;">
 					<div class="who_buying_title">3. Тип сертифіката</div>
@@ -275,18 +283,46 @@
 					<p class="agree-text">
 						Я згоден з <a href="#terms"> умовами сертифіката</a>
 					</p>
+					<div class="error-box" id="error-box"></div>
 					<button class="order-button">Замовити</button>
 				</div>
+
+
+
+				<div class="user-data-modal" id="user-data-modal">
+					<div class="modal-content">
+						<h2>1. ХТО КУПУЄ</h2>
+						<p>Ім'я: <span id="modal-name"></span></p>
+						<p>Прізвище: <span id="modal-surname"></span></p>
+						<p>Номер телефону: <span id="modal-phone"></span></p>
+						<p>Email адреса: <span id="modal-email"></span></p>
+						<h2>2. ХТО ЛІТАЄ</h2>
+						<p>Ім'я: <span id="modal-name-2"></span></p>
+						<p>Прізвище: <span id="modal-surname-2"></span></p>
+						<p>Номер телефону: <span id="modal-phone-2"></span></p>
+						<p>Email адреса: <span id="modal-email-2"></span></p>
+						<h2>3. ТИП СЕРТИФІКАТА</h2>
+						<p>Тип сертифіката: <span id="modal-certificate-type"></span></p>
+						<button class="modal-button-blue" id="accept-button">Погодитись</button>
+						<button class="modal-button-white" id="cancel-button">Скасувати</button>
+					</div>
+				</div>
+				
+
 
 
 				<div class="container">
 					<div class="gallery">
 						<div class="gallery_title">Галерея</div>
 						<div class="gallery_columns">
-							<div class="gallery_columns_box"><img src="./img/main/gallery/img_1.svg" alt="Gallery Image"></div>
-							<div class="gallery_columns_box"><img src="./img/main/gallery/img_2.svg" alt="Gallery Image"></div>
-							<div class="gallery_columns_box"><img src="./img/main/gallery/img_3.svg" alt="Gallery Image"></div>
-							<div class="gallery_columns_box"><img src="./img/main/gallery/img_4.svg" alt="Gallery Image"></div>
+							<div class="gallery_columns_box"><a href="./img/main/gallery/img_1.svg" data-fancybox="gallery"><img
+										src="./img/main/gallery/img_1.svg" alt="Gallery Image"></a></div>
+							<div class="gallery_columns_box"><a href="./img/main/gallery/img_2.svg" data-fancybox="gallery"><img
+										src="./img/main/gallery/img_2.svg" alt="Gallery Image"></a></div>
+							<div class="gallery_columns_box"><a href="./img/main/gallery/img_3.svg" data-fancybox="gallery"><img
+										src="./img/main/gallery/img_3.svg" alt="Gallery Image"></a></div>
+							<div class="gallery_columns_box"><a href="./img/main/gallery/img_4.svg" data-fancybox="gallery"><img
+										src="./img/main/gallery/img_4.svg" alt="Gallery Image"></a></div>
 						</div>
 					</div>
 				</div>
@@ -300,6 +336,8 @@
 	</footer>
 
 	<script src="./js/script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
 
 </body>
 
