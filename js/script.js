@@ -54,25 +54,43 @@ function activateButton(button) {
 	}
 }
 
-///* Плавний скролл *///
+///* Плавний скролл для всіх посилань *///
 
+
+function smoothScrollToTarget(targetId) {
+  const targetElement = document.getElementById(targetId);
+
+  if (targetElement) {
+    const headerHeight = document.querySelector('.nav').offsetHeight;
+    const targetPosition = targetElement.getBoundingClientRect().top;
+    const scrollToPosition = targetPosition + window.scrollY - headerHeight - (window.innerHeight * 0.025);
+
+    window.scrollTo({
+      top: scrollToPosition,
+      behavior: 'smooth'
+    });
+  }
+}
 
 // Додаємо обробник події для всіх посилань з класом "nav-link"
 document.querySelectorAll('.nav-link').forEach(link => {
-	link.addEventListener('click', function (e) {
-		e.preventDefault(); // Забороняємо стандартну дію посилань
-
-		const targetId = this.getAttribute('href').substring(1); // Отримуємо ідентифікатор якоря
-		const targetElement = document.getElementById(targetId); // Знаходимо елемент за ідентифікатором
-
-		if (targetElement) {
-			window.scrollTo({
-				top: targetElement.offsetTop, // Позиція верхнього краю цільового елемента
-				behavior: 'smooth' // Плавна прокрутка
-			});
-		}
-	});
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    smoothScrollToTarget(targetId);
+  });
 });
+
+// Додаємо обробник події для посилання в тексті
+const agreeLink = document.querySelector('.agree-text a');
+
+if (agreeLink) {
+  agreeLink.addEventListener('click', function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    smoothScrollToTarget(targetId);
+  });
+}
 
 
 ///* Форма 3 *///
@@ -225,7 +243,6 @@ const headerPageMain = document.querySelector('.header_page');
 const navMain = document.querySelector('.nav');
 const errorBox = document.getElementById('error-box');
 
-
 // Функція для відкриття модального вікна
 function openModalMain() {
 	userDataModal.style.display = 'block';
@@ -339,17 +356,7 @@ cancelButton.addEventListener('click', () => {
 
 
 
-
-
-
-
-
-
-
 ///* FancyBox *///
 $(document).ready(function () {
 	$("[data-fancybox]").fancybox();
 });
-
-///* Зміна Ціни при виборі к-сті пасаржир *///
-
