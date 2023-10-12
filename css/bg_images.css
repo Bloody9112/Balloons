@@ -5,6 +5,56 @@
 	justify-content: flex-end;
 }
 
+.clouds {
+	animation: moveClouds 5s ease-in-out infinite;
+}
+
+@keyframes moveClouds {
+	0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.balloons {
+  animation: floatBalloons 5s ease-in-out infinite;
+}
+
+@keyframes floatBalloons {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bird {
+  animation: flyBird 7s ease-in-out infinite;
+}
+
+@keyframes flyBird {
+	0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-25px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
 /* Clouds */
 
 #cloud_2 {
@@ -177,7 +227,7 @@
 	#cloud_2 {
 		margin-right: 25px;
 	}
-	
+
 	#cloud_4 {
 		margin: 1275px 29px 0 0;
 	}
@@ -202,7 +252,55 @@
 	#balloon_small {
 		margin: 950px 0 0 25px;
 	}
+
+	.clouds {
+		animation: moveClouds 8s ease-in-out infinite;
+	}
 	
+	@keyframes moveClouds {
+		0% {
+			transform: translateX(0);
+		}
+		50% {
+			transform: translateX(-25px);
+		}
+		100% {
+			transform: translateX(0);
+		}
+	}
+
+	.balloons {
+		animation: floatBalloons 8s ease-in-out infinite;
+	}
+
+	@keyframes floatBalloons {
+		0% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(-25px);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}
+
+	.bird {
+		animation: flyBird 15s ease-in-out infinite;
+	}
+	
+	@keyframes flyBird {
+		0% {
+			transform: translateX(0);
+		}
+		50% {
+			transform: translateX(250px);
+		}
+		100% {
+			transform: translateX(0);
+		}
+	}
+
 }
 
 @media (max-width: 500px) {
@@ -214,7 +312,7 @@
 	#balloon_small {
 		margin: 950px 0 0 25px;
 	}
-	
+
 }
 
 @media (max-width: 430px) {
@@ -226,7 +324,7 @@
 	#balloon_small {
 		margin: 950px 0 0 25px;
 	}
-	
+
 }
 
 @media (max-width: 403px) {
@@ -238,5 +336,5 @@
 	#balloon_small {
 		margin: 950px 0 0 25px;
 	}
-	
+
 }

@@ -15,6 +15,12 @@ body {
 	min-height: 100%;
 	font-family: 'GothamPro', sans-serif;
 	overflow-x: hidden;
+	scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 /* General */
@@ -793,8 +799,8 @@ body {
 	justify-content: center;
 	align-items: center;
 	row-gap: 40px;
-	width: 270px;
-	height: 270px;
+	max-width: 480px;
+	max-height: 270px;
 	flex-shrink: 0;
 	cursor: pointer;
 	transition: all 0.3s ease;
@@ -934,17 +940,17 @@ body {
 
 #user-data-modal {
 	display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  max-width: 550px;
-  margin: 0 auto;
-  border-radius: 30px;
-  background: #FFF;
-  box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.10);
-  padding: 25px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	max-width: 550px;
+	margin: 0 auto;
+	border-radius: 30px;
+	background: #FFF;
+	box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.10);
+	padding: 25px;
 }
 
 .modal-content>h2 {
@@ -994,7 +1000,7 @@ body {
 	transition: opacity 0.2s ease-in;
 	cursor: pointer;
 	margin: 50px auto 20px;
-	
+
 }
 
 .modal-button-blue:hover {
@@ -1110,7 +1116,7 @@ body {
 	.header_contacts {
 		gap: 20px;
 		padding-top: 35px;
-		
+
 	}
 
 	.header_numbers {
@@ -1144,7 +1150,7 @@ body {
 		-webkit-backdrop-filter: blur(35px);
 		backdrop-filter: blur(35px);
 		border-radius: 50px;
-		
+
 	}
 
 	/* Location */
@@ -1374,7 +1380,7 @@ body {
 	.gallery {
 		margin-top: 100px;
 		margin-bottom: 100px;
-		
+
 	}
 
 	.gallery_title {
@@ -1387,9 +1393,9 @@ body {
 	}
 
 	.gallery_columns_box {
-		row-gap: 35px;
-		width: 230px;
-		height: 230px;
+		row-gap: 30px;
+		max-width: 340px;
+		max-height: 200px;
 	}
 
 	/* Modal ordering */
